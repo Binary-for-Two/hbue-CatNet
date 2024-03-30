@@ -1804,7 +1804,8 @@ a:visited {
     flex-direction: column;
     position: relative;
     will-change: transform;
-    word-wrap: break-word
+    word-wrap: break-word;
+    max-height: 3vw;
 }
 
 .card:hover {
