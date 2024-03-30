@@ -1955,3 +1955,6 @@
  3 files changed, 2 insertions(+), 13 deletions(-)
  delete mode 100644 assets/css/bootstrap.min.css
  delete mode 100644 assets/js/bootstrap.min.js
+[main 40b78d6] update
+ 3 files changed, 5 insertions(+), 1 deletion(-)
+ rename assets/background.png => background.png (100%)
