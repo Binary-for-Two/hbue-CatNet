@@ -1888,3 +1888,7 @@
 [main f67a8bd] update
  2 files changed, 2 insertions(+)
  create mode 100644 assets/1711624759891_waifu2x_art_noise2 (1).png
+[main 025d897] update
+ 3 files changed, 3 insertions(+)
+ rename assets/{1711624759891_waifu2x_art_noise2 (1).png => 1711624759891_waifu2x_art_noise2 .png} (100%)
+ delete mode 100644 assets/1711624759891_waifu2x_art_noise2.png
