@@ -1805,7 +1805,7 @@ a:visited {
     position: relative;
     will-change: transform;
     word-wrap: break-word;
-    max-height: 15vw;
+    max-height: 11vw;
 }
 
 .card:hover {
@@ -1859,7 +1859,6 @@ a:visited {
 .card .image-bottom, .card .image-top, .card img {
     border: 0;
     border-radius: 0;
-    max-height: 32vw;
 }
 
 input, select, textarea {
