@@ -1892,3 +1892,6 @@
  3 files changed, 3 insertions(+)
  rename assets/{1711624759891_waifu2x_art_noise2 (1).png => 1711624759891_waifu2x_art_noise2 .png} (100%)
  delete mode 100644 assets/1711624759891_waifu2x_art_noise2.png
+[main 430a9da] update
+ 3 files changed, 5 insertions(+), 1 deletion(-)
+ rename assets/{1711624759891_waifu2x_art_noise2 .png => background.png} (100%)
