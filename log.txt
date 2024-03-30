@@ -1966,3 +1966,7 @@
  1 file changed, 2 insertions(+)
 [main d8d522c] update
  1 file changed, 2 insertions(+)
+[main 9f0f5b4] update
+ 3 files changed, 2 insertions(+)
+ rename background.png => assets/img/background.png (100%)
+ delete mode 100644 depositphotos_321246426-stock-illustration-animal-paw-print-icon-dog.jpg
