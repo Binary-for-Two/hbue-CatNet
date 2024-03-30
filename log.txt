@@ -1951,3 +1951,7 @@
  1 file changed, 2 insertions(+)
 [main 5b7eed3] update
  1 file changed, 2 insertions(+)
+[main 707ff65] update
+ 3 files changed, 2 insertions(+), 13 deletions(-)
+ delete mode 100644 assets/css/bootstrap.min.css
+ delete mode 100644 assets/js/bootstrap.min.js
