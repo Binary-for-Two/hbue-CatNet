@@ -1858,7 +1858,7 @@ a:visited {
 .card .image-bottom, .card .image-top, .card img {
     border: 0;
     border-radius: 0;
-    max-height: 32.4vw;
+    max-height: 32vw;
 }
 
 input, select, textarea {
