@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+    <!--导入paper css框架-->
+    <link href="../../../assets/css/paper.css" rel="stylesheet"/>
+
+    <!--导入全局css文件-->
+    <link href="../../../assets/css/main.css" rel="stylesheet"/>
+
+    <script src="../../../assets/js/jquery.js"></script>
+
+    <title>湖经猫猫档案</title>
+</head>
+<body>
+<div class="row">
+    <div class="sm-12 md-10 col">
+        <div class="row">
+            <div class="progress margin-bottom">
+                <div class="bar w-0"></div>
+            </div>
+            <div class="card" style="width: 520rem;min-height: 95vh;">
+                <div class="card-body">
+                    <img class="float-left" src="FuTeBo.jpg"
+                         style="max-height: 200px; max-width: 200px;">
+                    <h4 class="card-title" style="margin-top: 30px">福特波</h4>
+                    <h5 class="card-subtitle">奶牛</h5>
+                    <p class="card-text">神经小猫一只</p>
+                    <img src="1.jpg">
+                    <img src="2.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sm-12 md-2 col">
+        <nav>
+            <ul style="text-align: center">
+                <h3><a href="../../../index.html">湖经猫猫档案</a></h3>
+                <li><a href="../../cats.html">猫猫</a></li>
+                <li><a href="../../dogs.html">狗狗</a></li>
+                <li><a href="../../about.html">关于我们</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<script>
+    bar = document.getElementsByClassName("progress")[0].firstElementChild;
+    typ = document.createAttribute("class");
+    typ.nodeValue = "bar w-100";
+    bar.attributes.setNamedItem(typ);
+</script>
+
+<script>
+    var a_idx = 0;
+    jQuery(document).ready(function ($) {
+        $("body").click(function (e) {
+            var a = new Array("掌掌", "波波", "胖妹", "铁蛋", "怂怂", "香槟", "辛巴", "咪咪", "公主", "学霸", "大白", "摆摆");
+            var $i = $("<span/>").text(a[a_idx]);
+            a_idx = (a_idx + 1) % a.length;
+            var x = e.pageX,
+                y = e.pageY;
+            $i.css({
+                "z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
+                "top": y - 20,
+                "left": x,
+                "position": "absolute",
+                "font-weight": "bold",
+                "color": "#fffff"
+            });
+            $("body").append($i);
+            $i.animate({
+                    "top": y - 180,
+                    "opacity": 0
+                },
+                1500,
+                function () {
+                    $i.remove();
+                });
+        });
+    });
+</script>
+</body>
+<footer style="text-align: center">本网站与湖经动物保护协会无关</footer>
+</html>
