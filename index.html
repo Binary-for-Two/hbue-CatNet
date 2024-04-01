@@ -3,96 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+    <!--导入paper css框架-->
     <link href="assets/css/paper.css" rel="stylesheet"/>
+
+    <!--导入全局css文件-->
     <link href="assets/css/main.css" rel="stylesheet"/>
-    <style></style>
+
+    <script src="assets/js/jquery.js"></script>
 
     <title>湖经猫猫档案</title>
 </head>
+
 <body>
+<!--flex布局，并进行了手机端的优化-->
 <div class="row">
     <div class="sm-12 md-10 col">
         <div class="row">
             <div class="progress margin-bottom">
                 <div class="bar w-25"></div>
             </div>
-            <div class="card" style="width: 2000rem;">
+
+            <script>
+                bar = document.getElementsByClassName("progress")[0].firstElementChild;
+                typ = document.createAttribute("class");
+                typ.nodeValue = "bar w-0";
+                bar.attributes.setNamedItem(typ);
+            </script>
+
+            <div class="card" style="width: 520rem;">
                 <div class="card-body">
-                    <h4 class="card-title">学霸</h4>
-                    <h5 class="card-subtitle">中华田园犬</h5>
-                    <p class="card-text">可爱小肥狗狗一枚</p>
-                    <button> ฅ ฅ狗狗档案 ฅ ฅ</button>
-                </div>
-                <!--<img alt="Card example image" class="image-bottom" src="https://unsplash.it/550/250">-->
-            </div>
-            <div class="card" style="width: 2000rem;">
-                <div class="card-body">
-                    <h4 class="card-title">渣男</h4>
-                    <h5 class="card-subtitle">中华田园犬</h5>
-                    <p class="card-text">忧郁男神狗狗一枚</p>
-                    <button>🐕狗狗档案🐾</button>
-                </div>
-                <!--<img alt="Card example image" class="image-bottom" src="https://unsplash.it/550/250">-->
-            </div>
-            <div class="card" style="width: 2000rem;">
-                <div class="card-body">
-                    <h4 class="card-title">摆摆</h4>
-                    <h5 class="card-subtitle">中华田园犬</h5>
-                    <p class="card-text">温暖治愈狗狗一枚</p>
-                    <button><img src="depositphotos_321246426-stock-illustration-animal-paw-print-icon-dog.jpg"
-                                 style="width: 20px;height: 24px;display: inline">❀狗狗档案❀
-                    </button>
-                </div>
-                <!--<img alt="Card example image" class="image-bottom" src="https://unsplash.it/550/250">-->
-            </div>
-            <div class="card" style="width: 2000rem;">
-                <div class="card-body">
-                    <h4 class="card-title">断掌</h4>
+                    <img class="float-left" src="https://picsum.photos/768" alt="Card example image"
+                         style="max-height: 200px; max-width: 200px;">
+                    <h4 class="card-title" style="margin-top: 30px">断掌</h4>
                     <h5 class="card-subtitle">橘白</h5>
-                    <p class="card-text">小肥猫</p>
-                    <button> 🐈猫猫档案 🐈</button>
+                    <p class="card-text">可爱小肥猫一枚</p>
+                    <button>🐾猫猫档案🐾</button>
+                </div>
+
+                <script>
+                    bar = document.getElementsByClassName("progress")[0].firstElementChild;
+                    typ = document.createAttribute("class");
+                    typ.nodeValue = "bar w-25";
+                    bar.attributes.setNamedItem(typ);
+                </script>
+
+            </div>
+
+            <div class="card" style="width: 520rem;">
+                <div class="card-body">
+                    <h4 class="card-title">福特波</h4>
+                    <h5 class="card-subtitle">奶牛</h5>
+                    <p class="card-text">神经小猫一只</p>
+                    <button>🐾猫猫档案🐾</button>
                 </div>
             </div>
-            <div class="card" style="width: 2000rem;">
+
+            <script>
+                bar = document.getElementsByClassName("progress")[0].firstElementChild;
+                typ = document.createAttribute("class");
+                typ.nodeValue = "bar w-45";
+                bar.attributes.setNamedItem(typ);
+            </script>
+
+            <div class="card" style="width: 520rem;">
                 <div class="card-body">
-                    <h4 class="card-title">渣男</h4>
-                    <h5 class="card-subtitle">中华田园犬</h5>
-                    <p class="card-text">忧郁男神狗狗一枚</p>
-                    <button>🐕狗狗档案🐾</button>
+                    <h4 class="card-title">梅狸猫</h4>
+                    <h5 class="card-subtitle">狸花</h5>
+                    <p class="card-text">高冷小胖猫一枚</p>
+                    <button>🐾猫猫档案🐾</button>
                 </div>
-                <!--<img alt="Card example image" class="image-bottom" src="https://unsplash.it/550/250">-->
             </div>
-            <div class="card" style="width: 2000rem;">
+
+            <script>
+                bar = document.getElementsByClassName("progress")[0].firstElementChild;
+                typ = document.createAttribute("class");
+                typ.nodeValue = "bar w-65";
+                bar.attributes.setNamedItem(typ);
+            </script>
+
+            <div class="card" style="width: 520rem;">
                 <div class="card-body">
-                    <h4 class="card-title">渣男</h4>
-                    <h5 class="card-subtitle">中华田园犬</h5>
-                    <p class="card-text">忧郁男神狗狗一枚</p>
-                    <button>🐕狗狗档案🐾</button>
+                    <h4 class="card-title">怂怂</h4>
+                    <h5 class="card-subtitle">橘白</h5>
+                    <p class="card-text">怂怂的小肥猫一只</p>
+                    <button>🐾猫猫档案🐾</button>
                 </div>
-                <!--<img alt="Card example image" class="image-bottom" src="https://unsplash.it/550/250">-->
             </div>
-            <div class="card" style="width: 2000rem;">
+
+            <script>
+                bar = document.getElementsByClassName("progress")[0].firstElementChild;
+                typ = document.createAttribute("class");
+                typ.nodeValue = "bar w-75";
+                bar.attributes.setNamedItem(typ);
+            </script>
+
+            <div class="card" style="width: 520rem;">
                 <div class="card-body">
-                    <h4 class="card-title">渣男</h4>
-                    <h5 class="card-subtitle">中华田园犬</h5>
-                    <p class="card-text">忧郁男神狗狗一枚</p>
-                    <button>🐕狗狗档案🐾</button>
+                    <h4 class="card-title">铁蛋</h4>
+                    <h5 class="card-subtitle">简州猫</h5>
+                    <p class="card-text">贪吃超大肥猫一辆</p>
+                    <button>🐾猫猫档案🐾</button>
                 </div>
-                <!--<img alt="Card example image" class="image-bottom" src="https://unsplash.it/550/250">-->
+            </div>
+
+            <script>
+                bar = document.getElementsByClassName("progress")[0].firstElementChild;
+                typ = document.createAttribute("class");
+                typ.nodeValue = "bar w-85";
+                bar.attributes.setNamedItem(typ);
+            </script>
+
+            <div class="card" style="width: 520rem;">
+                <div class="card-body">
+                    <h4 class="card-title">大白</h4>
+                    <h5 class="card-subtitle">白猫</h5>
+                    <p class="card-text">霸道煤炭一堆</p>
+                    <button>🐾猫猫档案🐾</button>
+                </div>
+            </div>
+
+            <script>
+                bar = document.getElementsByClassName("progress")[0].firstElementChild;
+                typ = document.createAttribute("class");
+                typ.nodeValue = "bar w-95";
+                bar.attributes.setNamedItem(typ);
+            </script>
+
+            <div class="card" style="width: 520rem;">
+                <div class="card-body">
+                    <h4 class="card-title">咪咪</h4>
+                    <h5 class="card-subtitle">玳瑁</h5>
+                    <p class="card-text">亲人小可爱一个</p>
+                    <button>🐾猫猫档案🐾</button>
+                </div>
+            </div>
+
+            <div class="card" style="width: 520rem;">
+                <div class="card-body">
+                    <h4 class="card-title">内卷</h4>
+                    <h5 class="card-subtitle">黑猫</h5>
+                    <p class="card-text">警惕小机灵鬼一个</p>
+                    <button>🐾猫猫档案🐾</button>
+                </div>
             </div>
         </div>
     </div>
-    <div class="sm-12 md-2 col" >
-        <nav style="align-content: center">
+    <div class="sm-12 md-2 col">
+        <nav>
             <ul style="text-align: center">
                 <h3><a href="index.html">湖经猫猫档案</a></h3>
-                <li><a href="#">猫猫</a></li>
-                <li><a href="#">狗狗</a></li>
-                <li><a href="#">关于我们</a></li>
+                <li><a href="pages/cats.html">猫猫</a></li>
+                <li><a href="pages/dogs.html">狗狗</a></li>
+                <li><a href="pages/about.html">关于我们</a></li>
             </ul>
         </nav>
     </div>
 </div>
+
+<script>
+    bar = document.getElementsByClassName("progress")[0].firstElementChild;
+    typ = document.createAttribute("class");
+    typ.nodeValue = "bar w-100";
+    bar.attributes.setNamedItem(typ);
+</script>
+<script>
+    var a_idx = 0;
+    jQuery(document).ready(function ($) {
+        $("body").click(function (e) {
+            var a = new Array("掌掌", "波波", "胖妹", "铁蛋", "怂怂", "香槟", "辛巴", "咪咪", "公主", "学霸", "大白", "摆摆");
+            var $i = $("<span/>").text(a[a_idx]);
+            a_idx = (a_idx + 1) % a.length;
+            var x = e.pageX,
+                y = e.pageY;
+            $i.css({
+                "z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
+                "top": y - 20,
+                "left": x,
+                "position": "absolute",
+                "font-weight": "bold",
+                "color": "#fffff"
+            });
+            $("body").append($i);
+            $i.animate({
+                    "top": y - 180,
+                    "opacity": 0
+                },
+                1500,
+                function () {
+                    $i.remove();
+                });
+        });
+    });
+</script>
 </body>
-<footer style="text-align: center">本网站与湖经动物保护协会无关</footer>
+<footer style="text-align: center">本站点目前与动物保护协会无任何形式的隶属或合作关系</footer>
 </html>

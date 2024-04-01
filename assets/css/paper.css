@@ -989,9 +989,9 @@ ul li:before {
 }
 
 ul li {
-    text-indent: -7px;
     padding-top: 20px; /* 内部上间距 */
-    padding-bottom: 20px /* 内部下间距 */
+    padding-bottom: 20px; /* 内部下间距 */
+    text-indent: -7px;
 }
 
 ul li .badge, ul li [popover-bottom]:after, ul li [popover-left]:after, ul li [popover-right]:after, ul li [popover-top]:after {
@@ -1804,7 +1804,7 @@ a:visited {
     flex-direction: column;
     position: relative;
     will-change: transform;
-    word-wrap: break-word;
+    word-wrap: break-word
 }
 
 .card:hover {
@@ -1855,9 +1855,9 @@ a:visited {
     margin-left: 1.25rem
 }
 
-.card .image-bottom, .card .image-top, .card img {
+.card .image-bottom, .card .image-top {
     border: 0;
-    border-radius: 0;
+    border-radius: 0
 }
 
 input, select, textarea {
