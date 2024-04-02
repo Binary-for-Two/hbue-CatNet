@@ -23,11 +23,24 @@
             </div>
             <div class="card" style="width: 520rem;min-height: 95vh;">
                 <div class="card-body">
-                    <img class="float-left" src="SongSong.jpg"
-                         style="max-height: 200px; max-width: 200px;">
-                    <h4 class="card-title" style="margin-top: 30px">怂怂</h4>
-                    <h5 class="card-subtitle">橘白</h5>
-                    <p class="card-text">怂怂的小肥猫一只</p>
+                    <div class="paper">
+                        <img class="float-left" src="SongSong.jpg"
+                             style="max-height: 200px; max-width: 200px;">
+                        <h1 style="text-align: right;margin-top: 0;margin-bottom: 0">猫猫档案</h1>
+                        <h4 class="card-title">怂怂</h4>
+                        <h5 class="card-subtitle">橘白</h5>
+                        <p class="card-text">怂怂的小肥猫一只</p>
+                        <p>
+                            <br>
+                            <br>
+                            <br>
+                            猫咪性别：弟弟<br>
+                            猫咪性格：脾气很好，可以抱，但是不要亲他。<br>
+                            猫咪特点：有言“睁眼看你的是怂怂，眯眼看你的是断掌”，跟断掌毛色很相近的一只小猫，脸比断掌圆，鼻子上没有班点。<br>
+                            猫咪简介：怂怂很机灵很可爱，是一只有生命力的小猫。圆的很标准，不怕人，叫他会理你。<br>
+                            猫咪趣事：曾多次对一只小橘猫马工程示好，但是被马工程拒绝，被哈了以后畏畏缩缩，胆子跟他的名字一模一样。<br>
+                        </p>
+                    </div>
                     <img src="1.jpg">
                     <img src="2.jpg">
                 </div>
@@ -57,7 +70,7 @@
     var a_idx = 0;
     jQuery(document).ready(function ($) {
         $("body").click(function (e) {
-            var a = new Array("掌掌", "波波", "胖妹", "铁蛋", "怂怂", "香槟", "辛巴", "咪咪", "公主", "学霸", "大白", "摆摆");
+            var a = ["掌掌", "波波", "胖妹", "铁蛋", "怂怂", "香槟", "辛巴", "咪咪", "公主", "学霸", "大白", "摆摆"];
             var $i = $("<span/>").text(a[a_idx]);
             a_idx = (a_idx + 1) % a.length;
             var x = e.pageX,

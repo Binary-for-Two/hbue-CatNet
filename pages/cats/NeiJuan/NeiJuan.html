@@ -23,11 +23,24 @@
             </div>
             <div class="card" style="width: 520rem;min-height: 95vh;">
                 <div class="card-body">
-                    <img class="float-left" src="NeiJuan.jpg"
-                         style="max-height: 200px; max-width: 200px;">
-                    <h4 class="card-title" style="margin-top: 30px">内卷</h4>
-                    <h5 class="card-subtitle">黑猫</h5>
-                    <p class="card-text">警惕小机灵鬼一个</p>
+                    <div class="paper">
+                        <img class="float-left" src="NeiJuan.jpg"
+                             style="max-height: 200px; max-width: 200px;">
+                        <h1 style="text-align: right;margin-top: 0;margin-bottom: 0">猫猫档案</h1>
+                        <h4 class="card-title">内卷</h4>
+                        <h5 class="card-subtitle">黑猫</h5>
+                        <p class="card-text">警惕小机灵鬼一个</p>
+                        <p>
+                            <br>
+                            <br>
+                            <br>
+                            猫咪外号：卷宝，卷卷<br>
+                            猫咪性别：妹妹<br>
+                            猫咪性格：有亲人趋势，以前比较怕人<br>
+                            猫咪特点：尾巴是麒麟尾，卷卷的。眼睛是黄色的，经常眼神不羁的样子。<br>
+                            猫咪简介：胆子有点小，可能你有吃的都难摸到她，很机灵，在地面和下水道之间活动自如，喜欢抓小鸟，身手敏捷。
+                        </p>
+                    </div>
                     <img src="1.jpg">
                     <img src="2.jpg">
                 </div>
@@ -57,7 +70,7 @@
     var a_idx = 0;
     jQuery(document).ready(function ($) {
         $("body").click(function (e) {
-            var a = new Array("掌掌", "波波", "胖妹", "铁蛋", "怂怂", "香槟", "辛巴", "咪咪", "公主", "学霸", "大白", "摆摆");
+            var a = ["掌掌", "波波", "胖妹", "铁蛋", "怂怂", "香槟", "辛巴", "咪咪", "公主", "学霸", "大白", "摆摆"];
             var $i = $("<span/>").text(a[a_idx]);
             a_idx = (a_idx + 1) % a.length;
             var x = e.pageX,
