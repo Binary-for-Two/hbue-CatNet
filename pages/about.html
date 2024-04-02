@@ -1,10 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 
+    <!--导入paper css框架-->
+    <link href="../assets/css/paper.css" rel="stylesheet"/>
+
+    <!--导入全局css文件-->
+    <link href="../assets/css/main.css" rel="stylesheet"/>
+
+    <script src="../assets/js/jquery.js"></script>
+
+    <title>湖经猫猫档案</title>
+</head>
+
+<body>
+<!--flex布局，并进行了手机端的优化-->
+<div class="row">
+    <div class="col-fill col"></div>
+    <div class="paper sm-12 md-8 col" style="text-align: center;">
+        <button style="display: block"><a href="../index.html">返回首页</a></button>
+        <h1>贡献人员名单</h1>
+        <h3>排名不分先后</h3>
+        <h4>以姓氏首字母排名为准</h4>
+        <br>
+        <br>
+        <p>黄婷（背景、插图）</p>
+        <p>海边的狮子🦁（照片）</p>
+        <p>胡锦旗（代码测试）</p>
+        <p>黄未玮（照片）</p>
+        <p>无敌卷卷轮（照片）</p>
+        <p>祥云（照片）</p>
+        <p>小圆（照片）</p>
+        <p>晓月（照片）</p>
+        <p>芋芋芋泥（照片）</p>
+        <p>张丽君（照片）</p>
+        <p>张庭恺（代码测试）</p>
+        <p>张锐（代码）</p>
+    </div>
+    <div class="col-fill col"></div>
+</div>
+
+<script>
+    bar = document.getElementsByClassName("progress")[0].firstElementChild;
+    typ = document.createAttribute("class");
+    typ.nodeValue = "bar w-100";
+    bar.attributes.setNamedItem(typ);
+</script>
+<script>
+    var a_idx = 0;
+    jQuery(document).ready(function ($) {
+        $("body").click(function (e) {
+            var a = new Array("掌掌", "波波", "胖妹", "铁蛋", "怂怂", "香槟", "辛巴", "咪咪", "公主", "学霸", "大白", "摆摆");
+            var $i = $("<span/>").text(a[a_idx]);
+            a_idx = (a_idx + 1) % a.length;
+            var x = e.pageX,
+                y = e.pageY;
+            $i.css({
+                "z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
+                "top": y - 20,
+                "left": x,
+                "position": "absolute",
+                "font-weight": "bold",
+                "color": "#fffff"
+            });
+            $("body").append($i);
+            $i.animate({
+                    "top": y - 180,
+                    "opacity": 0
+                },
+                1500,
+                function () {
+                    $i.remove();
+                });
+        });
+    });
+</script>
 </body>
+<footer style="text-align: center">本站点目前与湖经动物保护协会无任何形式的隶属或合作关系，仅供参赛之用</footer>
 </html>
